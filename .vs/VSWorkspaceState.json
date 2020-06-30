@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Javascript",
+    "\\js",
+    "\\Resources",
+    "\\Resources\\Textures",
+    "\\Shaders"
   ],
-  "SelectedNode": "\\Solar System.html",
+  "SelectedNode": "\\Javascript\\Sun.js",
   "PreviewInSolutionExplorer": false
 }
