@@ -3,7 +3,7 @@ function Venus(radius, fragments) {
   var material = new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load('./Resources/Textures/Venus_Texture.jpg') });
   material.color = new THREE.Color(1, 1, 1);
 
-  console.log("hey there");
+  console.log("hello world");
 
   var sphere = new THREE.Mesh(geometry, material);
   sphere.name = "Venus";
