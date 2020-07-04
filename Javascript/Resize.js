@@ -162,3 +162,12 @@ function scaleUpXDistanceByPercent(scaleAmount) {
 		console.log("Reached Max Scale In Amount");
 	}
 }
+
+/* 
+
+What is your approach to discipline?
+
+*		Kids are respected and listened to
+*		Don't want to needlessly escalate situations
+
+*/

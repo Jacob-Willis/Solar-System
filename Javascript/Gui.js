@@ -11,8 +11,8 @@ var sunBtn = planetsAndSunFolder.add(_sunBtn, 'sunBtn').name('Sun');
 
 sunBtn.onChange(function () {
   camera.position.set(sun.position.x, sun.position.y, (sun.position.z + sunRadius * 2.5 * sun.scale.z));
-  camera.lookAt(new THREE.Vector3(0, 0, 0));
-  controls.target = sun.position;
+  camera.lookAt(sun.position);
+  controls.target = new THREE.Vector3(sun.position.x, sun.position.y, sun.position.z);
 });
 
 // Mercury Button
@@ -24,7 +24,7 @@ var mercuryBtn = planetsAndSunFolder.add(_mercuryBtn, 'mercuryBtn').name('Mercur
 mercuryBtn.onChange(function () {
   camera.position.set(mercury.position.x, mercury.position.y, (mercury.position.z + mercuryRadius * 2.5 * mercury.scale.z));
   camera.lookAt(mercury.position);
-  controls.target = mercury.position;
+  controls.target = new THREE.Vector3(mercury.position.x, mercury.position.y, mercury.position.z);
 });
 
 // Venus Button
@@ -36,7 +36,7 @@ var venusBtn = planetsAndSunFolder.add(_venusBtn, 'venusBtn').name('Venus');
 venusBtn.onChange(function () {
   camera.position.set(venus.position.x, venus.position.y, (venus.position.z + venusRadius * 2.5 * venus.scale.z));
   camera.lookAt(venus.position);
-  controls.target = venus.position;
+  controls.target = new THREE.Vector3(venus.position.x, venus.position.y, venus.position.z);
 });
 
 // Earth Button
@@ -48,7 +48,7 @@ var earthBtn = planetsAndSunFolder.add(_earthBtn, 'earthBtn').name('Earth');
 earthBtn.onChange(function () {
   camera.position.set(earth.position.x, earth.position.y, (earth.position.z + earthRadius * 2.5 * earth.scale.z));
   camera.lookAt(earth.position);
-  controls.target = earth.position;
+  controls.target = new THREE.Vector3(earth.position.x, earth.position.y, earth.position.z);
 });
 
 // Mars Button
@@ -60,7 +60,7 @@ var marsBtn = planetsAndSunFolder.add(_marsBtn, 'marsBtn').name('Mars');
 marsBtn.onChange(function () {
   camera.position.set(mars.position.x, mars.position.y, (mars.position.z + marsRadius * 2.5 * mars.scale.z));
   camera.lookAt(mars.position);
-  controls.target = mars.position;
+  controls.target = new THREE.Vector3(mars.position.x, mars.position.y, mars.position.z);
 });
 
 // Jupiter
@@ -71,8 +71,8 @@ var jupiterBtn = planetsAndSunFolder.add(_jupiterBtn, 'jupiterBtn').name('Jupite
 
 jupiterBtn.onChange(function () {
   camera.position.set(jupiter.position.x, jupiter.position.y, (jupiter.position.z + jupiterRadius * 2.5 * jupiter.scale.z));
-  camera.lookAt(jupiter.position);
-  controls.target = jupiter.position;
+  camera.lookAt(saturn.position);
+  controls.target = new THREE.Vector3(saturn.position.x, saturn.position.y, saturn.position.z);
 });
 
 // Saturn
@@ -84,7 +84,7 @@ var saturnBtn = planetsAndSunFolder.add(_saturnBtn, 'saturnBtn').name('Saturn');
 saturnBtn.onChange(function () {
   camera.position.set(saturn.position.x, saturn.position.y, (saturn.position.z + saturnRadius * 2.5 * saturn.scale.z));
   camera.lookAt(saturn.position);
-  controls.target = saturn.position;
+  controls.target = new THREE.Vector3(saturn.position.x, saturn.position.y, saturn.position.z);
 });
 
 // Uranus
@@ -96,7 +96,7 @@ var uranusBtn = planetsAndSunFolder.add(_uranusBtn, 'uranusBtn').name('Uranus');
 uranusBtn.onChange(function () {
   camera.position.set(uranus.position.x, uranus.position.y, (uranus.position.z + uranusRadius * 2.5 * uranus.scale.z));
   camera.lookAt(uranus.position);
-  controls.target = uranus.position;
+  controls.target = new THREE.Vector3(uranus.position.x, uranus.position.y, uranus.position.z);
 });
 
 // Neptune
@@ -108,7 +108,7 @@ var neptuneBtn = planetsAndSunFolder.add(_neptuneBtn, 'neptuneBtn').name('Neptun
 neptuneBtn.onChange(function () {
   camera.position.set(neptune.position.x, neptune.position.y, (neptune.position.z + neptuneRadius * 2.5 * neptune.scale.z));
   camera.lookAt(neptune.position);
-  controls.target = neptune.position;
+  controls.target = new THREE.Vector3(neptune.position.x, neptune.position.y, neptune.position.z);
 });
 
 // Pluto
@@ -120,7 +120,7 @@ var plutoBtn = planetsAndSunFolder.add(_plutoBtn, 'plutoBtn').name('Pluto');
 plutoBtn.onChange(function () {
   camera.position.set(pluto.position.x, pluto.position.y, (pluto.position.z + plutoRadius * 2.5 * pluto.scale.z));
   camera.lookAt(pluto.position);
-  controls.target = pluto.position;
+  controls.target = new THREE.Vector3(pluto.position.x, pluto.position.y, pluto.position.z);
 });
 
 // Original Scaling

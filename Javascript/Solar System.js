@@ -66,7 +66,7 @@ scene.add(line);
 var light = new THREE.AmbientLight(0x404040); // soft white light
 scene.add(light);
 
-camera.position.set(sunPosition.x, sunPosition.y, (sunRadius * 3));
+camera.position.set(sun.position.x, sun.position.y, (sun.position.z + sunRadius * 2.5 * sun.scale.z));
 camera.lookAt(sunPosition);
 
 animate();
