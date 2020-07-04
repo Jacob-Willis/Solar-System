@@ -10,6 +10,7 @@ var planetsAndSunGroup = new THREE.Group();
 // Adds the sun
 sun = new Sun(64);
 planetsAndSunGroup.add(sun);
+//sun.scale(2, 1, 1);
 
 // Adds Mercury
 mercury = new Mercury(64);
@@ -47,6 +48,7 @@ planetsAndSunGroup.add(neptune);
 pluto = new Pluto(64);
 planetsAndSunGroup.add(pluto);
 
+planetsAndSunGroup.name = "planetsAndSun";
 scene.add(planetsAndSunGroup);
 
 resizeOriginalScaling();
