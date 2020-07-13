@@ -2,11 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\Javascript",
+    "\\Javascript\\Planets",
     "\\js",
     "\\Resources",
     "\\Resources\\Textures",
+    "\\Resources\\Textures\\Planets",
+    "\\Resources\\Textures\\Stars",
     "\\Shaders"
   ],
-  "SelectedNode": "\\Javascript\\Mercury.js",
+  "SelectedNode": "\\Javascript\\Planets\\Jupiter.js",
   "PreviewInSolutionExplorer": false
 }

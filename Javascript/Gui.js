@@ -71,8 +71,8 @@ var jupiterBtn = planetsAndSunFolder.add(_jupiterBtn, 'jupiterBtn').name('Jupite
 
 jupiterBtn.onChange(function () {
   camera.position.set(jupiter.position.x, jupiter.position.y, (jupiter.position.z + jupiterRadius * 2.5 * jupiter.scale.z));
-  camera.lookAt(saturn.position);
-  controls.target = new THREE.Vector3(saturn.position.x, saturn.position.y, saturn.position.z);
+  camera.lookAt(jupiter.position);
+  controls.target = new THREE.Vector3(jupiter.position.x, jupiter.position.y, jupiter.position.z);
 });
 
 // Saturn
