@@ -1,7 +1,7 @@
 // 1 astronomical unit = 149597871 kilometers
 //var auUnit = 149597871;
 
-scaleMultiplication = 0.5;
+scaleMultiplication = 0.6;
 
 var scaleInAmount = 0;
 var scaleMax = 15;
@@ -165,11 +165,36 @@ function scaleUpXDistanceByPercent(scaleAmount) {
   }
 }
 
-/* 
+function updateGroupGeometry(mesh, geometry) {
 
-What is your approach to discipline?
+  if (geometry.isGeometry) {
 
-*		Kids are respected and listened to
-*		Don't want to needlessly escalate situations
+    geometry = new BufferGeometry().fromGeometry(geometry);
 
-*/
+    console.warn('THREE.GeometryBrowser: Converted Geometry to BufferGeometry.');
+
+  }
+
+  try {
+    mesh.geometry.dispose();
+    mesh.geometry.dispose();
+
+    mesh.geometry = new THREE.WireframeGeometry(geometry);
+    mesh.geometry = geometry;
+  } catch(error) {
+    console.log(error);
+  }
+
+  // these do not update nicely together if shared
+
+}
+
+function generateGeometry(mesh, radius, segmentCount) {
+  console.log("segment Count Before: " + mesh.geometry.parameters.heightSegments);
+  updateGroupGeometry(mesh,
+    new THREE.SphereBufferGeometry(
+      radius, segmentCount, segmentCount
+    )
+  );
+  console.log("Geomerty After: " + mesh.geometry.parameters.heightSegments);
+}
